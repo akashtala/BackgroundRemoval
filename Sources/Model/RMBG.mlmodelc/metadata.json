@@ -1,0 +1,75 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "shortDescription" : "RMBG: The IS-Net enhanced with our unique training scheme and proprietary dataset.",
+    "outputSchema" : [
+      {
+        "height" : "1024",
+        "colorspace" : "Grayscale",
+        "isOptional" : "0",
+        "width" : "1024",
+        "isColor" : "0",
+        "formattedType" : "Image (Grayscale 1024 × 1024)",
+        "hasSizeFlexibility" : "0",
+        "type" : "Image",
+        "shortDescription" : "",
+        "name" : "output"
+      }
+    ],
+    "storagePrecision" : "Int8",
+    "modelParameters" : [
+
+    ],
+    "author" : "https:\/\/huggingface.co\/briaai\/RMBG-1.4",
+    "specificationVersion" : 5,
+    "license" : "https:\/\/huggingface.co\/briaai\/RMBG-1.4",
+    "computePrecision" : "Float16",
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "11.0",
+      "tvOS" : "14.0",
+      "visionOS" : "1.0",
+      "watchOS" : "7.0",
+      "iOS" : "14.0",
+      "macCatalyst" : "14.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetwork"
+    },
+    "inputSchema" : [
+      {
+        "height" : "1024",
+        "colorspace" : "RGB",
+        "isOptional" : "0",
+        "width" : "1024",
+        "isColor" : "1",
+        "formattedType" : "Image (Color 1024 × 1024)",
+        "hasSizeFlexibility" : "0",
+        "type" : "Image",
+        "shortDescription" : "",
+        "name" : "image"
+      }
+    ],
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.source_dialect" : "TorchScript",
+      "com.github.apple.coremltools.source" : "torch==2.1.0+cu121",
+      "com.github.apple.coremltools.version" : "7.1"
+    },
+    "generatedClassName" : "RMBG_quantized",
+    "neuralNetworkLayerTypeHistogram" : {
+      "DivideBroadcastable" : 1,
+      "Concat" : 50,
+      "ReduceMin" : 1,
+      "Convolution" : 114,
+      "ActivationSigmoid" : 1,
+      "UpsampleBiLinear" : 34,
+      "ReduceMax" : 1,
+      "PoolingMax" : 33,
+      "Add" : 13,
+      "Multiply" : 1,
+      "ActivationLinear" : 2,
+      "ActivationReLU" : 112
+    },
+    "method" : "predict"
+  }
+]

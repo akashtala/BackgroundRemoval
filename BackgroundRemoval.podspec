@@ -8,35 +8,30 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BackgroundRemoval'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of BackgroundRemoval.'
+  s.version          = '0.0.1'
+  s.summary          = 'A pod that help developer remove background from image.'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/talaakash/BackgroundRemoval'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'talaakash' => 'akasht.noble@gmail.com' }
-  s.source           = { :git => 'https://github.com/talaakash/BackgroundRemoval.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '10.0'
-
-  s.source_files = 'BackgroundRemoval/Classes/**/*'
+  s.description      = "BackgroundRemover is a lightweight and efficient Swift library that removes white or solid color backgrounds from images. Ideal for creating transparent PNGs, sticker apps, or improving image processing workflows.
   
+  Features:
+  ✅ Removes white or specific color backgrounds from images although remove non static color backgrounds
+  ✅ Supports UIImage and CIImage inputs
+  ✅ Adjustable tolerance for better accuracy
+  ✅ Fast and optimised for iOS devices
+  ✅ Simple and easy-to-use API"
+
+  s.homepage         = 'https://github.com/akashtala/BackgroundRemoval'
+  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.author           = { 'Akash Tala' => 'akashpatel54668@gmail.com' }
+  s.source           = { :git => 'https://github.com/akashtala/BackgroundRemoval.git', :tag => s.version.to_s }
+#   s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+
+  s.ios.deployment_target = '14.0'
+  s.swift_version = '5.0'
+
+  s.source_files = 'Sources/**/*.swift'
+  s.resources = "Sources/**/*.mlmodelc"
   # s.resource_bundles = {
   #   'BackgroundRemoval' => ['BackgroundRemoval/Assets/*.png']
   # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
